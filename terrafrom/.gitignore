@@ -1,0 +1,6 @@
+terraform.tfstate
+terraform.tfstate.backup
+terra-key-ansible
+terra-key-ansible.pub
+.terraform.lock.hcl
+.terraform
