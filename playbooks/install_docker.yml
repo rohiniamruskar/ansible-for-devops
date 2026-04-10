@@ -1,0 +1,10 @@
+
+- name: install docker on all servers
+  hosts: servers
+  become: yes
+  roles:
+    - role: docker
+      docker_users:
+        - ubuntu
+        - ec2-user
+      docker_server_enabled: true

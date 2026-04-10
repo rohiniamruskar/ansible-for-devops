@@ -1,0 +1,15 @@
+---
+# handlers file for roles/docker
+
+- name: Restart Docker
+  service:
+    name: docker
+    state: restarted
+  become: yes
+
+- name: Start and enable Docker
+  service:
+    name: docker
+    state: started
+    enabled: "{{ docker_service_enabled }}"
+  become: yes

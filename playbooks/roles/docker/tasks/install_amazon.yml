@@ -1,0 +1,13 @@
+# install docker on amazon linux
+
+---
+- name: Update dnf cache
+  dnf:
+    update_cache: true
+  become: yes
+
+- name: install docker (Amazon/Linux) 
+  dnf:
+    name: docker
+    state: present
+  become: yes
