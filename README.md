@@ -59,7 +59,8 @@ Ansible was used to automate server configuration:
 
 ```
 ansible-for-devops/
-├── inventories/
+├── inventories/dev/
+|   └── hosts.ini/
 ├── playbooks/
 |  └── roles/
 │      └── docker/
