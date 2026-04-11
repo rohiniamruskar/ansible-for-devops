@@ -56,25 +56,25 @@ Ansible was used to automate server configuration:
 ---
 
 ## 📂 Project Structure
+
+```
 ansible-for-devops/
-│
 ├── inventories/
 ├── playbooks/
-├── roles/
-│ └── docker/
-│ ├── tasks/
-│ ├── handlers/
-│ └── defaults/
-│
+|  └── roles/
+│      └── docker/
+│          ├── tasks/
+│          ├── handlers/
+│          ├── defaults/
+|          ├── README.md
 ├── terraform/
-│ ├── ec2.tf
-│ ├── key_pair.tf
-│ ├── security_group.tf
-│ ├── variables.tf
-│ ├── generate_inventory.tf
-│ ├── templates/
-│ │ └── inventory.tpl
-│ ├── outputs.tf
-│
+│   ├── ec2.tf
+│   ├── key_pair.tf
+│   ├── security_group.tf
+│   ├── variables.tf
+│   ├── generate_inventory.tf
+│   ├── templates/
+│   │   └── inventory.tpl
+│   ├── outputs.tf
 └── README.md
----
+```
